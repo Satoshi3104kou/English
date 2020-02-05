@@ -1,0 +1,27 @@
+.header
+  
+  .header__left
+    Eng(ineer)lish
+  .header__right
+    - if user_signed_in?
+      = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "header__right__logo-a"
+      = link_to "新規投稿", new_word_path, class: "header__right__logo-b"
+    - else
+      = link_to "ログイン", new_user_session_path, class: "header__right__logo-a"
+      = link_to "新規登録", new_user_registration_path, class: "header__right__logo-b"
+
+.main
+ 
+
+  .main__search   
+    -# %form{:action => "./word", :method => "get"}
+    -# %p
+    -#   %input#inText1.inText{:onblur => "coloeSet(this)", :onfocus => "colorReset(this)", :placeholder => "キーワード検索", :type => "text"}/
+
+    -#   %input{:type => "submit", :value => "Search", :class => "Search-button"}/
+
+    = form_with url: search_words_path, local: true, class: "search-form" do |form|
+      = form.text_field :keyword, placeholder: "キーワード検索", class: "inText:focus"
+      = form.submit "Search", class: "search-btn"
+
+

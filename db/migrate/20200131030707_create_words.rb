@@ -1,0 +1,10 @@
+class CreateWords < ActiveRecord::Migration[5.2]
+  def change
+    create_table :words do |t|
+      t.string :letter
+      t.string :meaning
+      t.text :engineer
+      t.timestamps
+    end
+  end
+end

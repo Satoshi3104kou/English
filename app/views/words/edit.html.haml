@@ -1,0 +1,12 @@
+.newword
+  編集
+= form_with model: @word, class: :form, local: true do |form|
+  .form-a
+    = form.text_field :letter, placeholder: :単語, class: :form__word
+  .form-b
+    = form.text_field :meaning, placeholder: :意味, class: :form__mean
+  .form-c
+    = form.text_area :engineer, placeholder: :エンジニア用語, class: :form__eng
+  .form-d
+    = form.submit '編集' , class: "button"
+  
