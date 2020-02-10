@@ -51,18 +51,21 @@ class WordsController < ApplicationController
   def search
    
     @word = Word.search(params[:keyword]).first
+    # @word = Word.where('letter LIKE(?)',"%#{search_params[:keyword]}%").order('letter ASC').limit(20)
+    respond_to do |format|
+      format.html
+      format.json
+    end
     
     if @word
       redirect_to word_path(@word)
     else          
       flash[:alert] = "見当たりません。"
-      redirect_to :root #失敗の場合 
+      redirect_to root_path #失敗の場合 
    
     end
-    # respond_to do |format|
-    #   format.html
-    #   format.json
-    # end
+    
+    
   end
 
 
@@ -73,6 +76,6 @@ class WordsController < ApplicationController
     def redirect_root
       redirect_to root_path unless user_signed_in?
     end
-
+  
 end
 
