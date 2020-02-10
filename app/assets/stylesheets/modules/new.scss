@@ -1,35 +1,92 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('./app/assets/fonts/TanukiMagic.ttf') format('truetype');
+}
+
 .wrapper{
   height: 100vh;
   width: 100%;
-  background-color: pink;
+  font-family:'MyFont';
   text-align:center;
-  margin: auto;
-  padding-top: 120px;
 
+  background-image:  url(黒板.jpg);
+  background-position: center center;
+  background-size:  cover; 
+  
+  
+  
   .title{
     font-weight: bold;
     font-size: 50px;
-
+    padding-top: 30px;
+    font-family:'MyFont';
+    color: whitesmoke;
+    
 
   }
 
   .field-email{
     margin-top: 80px;
+    color: whitesmoke;
+   
+    
+  }
+  #user_email{
+    background    :rgba(0,0,0,0); 
+    box-shadow    : 20px 20px 47px #666666;
+    height: 40px;
+    width: 300px;
   }
 
   .field-pass{
     margin-top: 30px;
+    color: whitesmoke;
+    
 
+  }
+  #user_password{
+    background    :rgba(0,0,0,0); 
+    box-shadow    : 20px 20px 47px #666666;
+    height: 40px;
+    width: 300px;
   }
 
   .field-confimation{
     margin-top: 30px;
+    color: whitesmoke;
+    background    :rgba(0,0,0,0); 
+    
 
   }
+  #user_password_confirmation{
+    background    :rgba(0,0,0,0); 
+    box-shadow    : 20px 20px 47px #666666;
+    height: 40px;
+    width: 300px;
+  }
 
-  .actions{
-    margin-top: 100px;
-    
+ 
+
+  .button{
+    margin-top: 80px;
+    display       : inline-block;
+    border-radius : 50%;          /* 角丸       */
+    font-size     : 18pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 25px 25px;   /* 余白       */
+    background    :rgba(0,0,0,0);     /* 背景色     */
+    color         : #ffffff;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    opacity       : 1;           /* 透明度     */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 20px 20px 47px #666666;  /* 影の設定 */
+    text-decoration: none;
+  }
+  .button:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+    color         : #003300;     /* 背景色     */
+    background    : #ffffff;     /* 文字色     */
   }
 
 }

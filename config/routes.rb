@@ -8,9 +8,9 @@ Rails.application.routes.draw do
 
   devise_for :users
   root to: 'words#index'
-  resources :words, except: :index do
+  resources :words, except: :index  do
     collection do
-      post 'search'
+      get 'search'
     end
   end
   # get 'signup', to: 'users#new'

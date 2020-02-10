@@ -1,78 +1,151 @@
-.newword{
-background-color: red;
-font-weight: bold;
-margin: 10px auto;
-width:100%;
-font-size: 50px;
-height: 90px;
-text-align:center;
-}
 
-  .form{
+.wrapper-new {
 
+
+  .newword{
+  background-color: #45d6c2a3;
+  font-weight: bold;
+  width:100%;
+  font-size: 50px;
+  height: 90px;
+  text-align:center;
+  }
+
+  .form {
+    position: absolute;         /* 位置指定 */
+    height: calc(100vh - 90px);
+    width:  100%;              /* 幅指定 */
+              /* 余白指定 */
+    font-size:  20px;           /* 文字サイズ指定 */
+    z-index:  99;               /* 重なり順指定 */
+    background-attachment: fixed;
+    background-size: cover; 
+  }
+  .form:after {
+    content: '';                    /* 擬似要素を実体化 */
+    position:  absolute;            /* 位置指定 */
+    height: calc(100vh - 90px);
+    width:  100%;                   /* 幅指定 */
+    background-image:  url(work2.jpg);   /* 背景画像指定 */
+    left:  0;                       /* 位置指定 */
+    top: 0;                         /* 位置指定 */
+    z-index:  -1;                   /* 重なり順指定 */
+    opacity:  0.4;                  /* 透過度指定 */
+    background-size:  cover;        /* 背景画像サイズ指定 */
+    background-position: center center;
+  } 
+
+   
+        
+    
+    
     .form-a{
       text-align:center;
       width:100%;
-      height: 90px;
-      padding-top: 50px;
+      padding-top: 15px;
     
       .form__word{
-        height: 90px;
         text-align:center;
+        position: relative;
+        display: inline-block;
+        margin: 15px 0;
+        padding: 0 5px;
+        width: 300px;
+        height: 120px;
+        line-height: 120px;
+        text-align: center;
+        color: #FFF;
+        font-size: 40px;
+        font-weight: bold;
+        background: #3b0aca;
+        border-radius: 50%;
+        box-sizing: border-box;
+        z-index:  99;
       }
+
+      
+      
     }
 
     .form-b{
-      text-align:center;
-      width:100%;
-      height: 90px;
-      padding-top: 50px;
+      text-align: center;
+      width: 100%;
+      padding-top: 15px;
+   
       .form__mean{
-        height: 90px;
         text-align:center;
-        
+        position: relative;
+        display: inline-block;
+        margin: 20px 0;
+        padding: 0 5px;
+        width: 300px;
+        height: 120px;
+        line-height: 120px;
+        text-align: center;
+        color: rgb(10, 10, 10);
+        font-size: 40px;
+        font-weight: bold;
+        background: #eafb0d;
+        border-radius: 50%;
+        box-sizing: border-box;
+        z-index:  99;
+     
       }
     }
     .form-c{
-      text-align:center;
-      width:100%;
-      height: 90px;
-      padding-top: 50px;
+      text-align: center;
+      width: 100%;
+      padding-top: 15px;
 
       .form__eng{
-        height: 90px;
         text-align:center;
+        position: relative;
+        display: inline-block;
+        margin: 20px 0;
+        padding: 0 5px;
+        width: 500px;
+        height: 150px;
+        line-height: 120px;
+        text-align: center;
+        color: #FFF;
+        font-size: 40px;
+        font-weight: bold;
+        background: #ef747e;
+        border-radius: 5%;
+        box-sizing: border-box;
+        z-index:  99;
+        line-height: 45px
         
       }
     }
-    .form-d{
+      .form-d{
 
-      text-align:center;
-      width:100%;
-      height: 90px;
-      padding-top: 50px;
+        text-align:center;
+        width:100%;
+        height: 90px;
+     
 
-      .button {
-        display       : inline-block;
-        border-radius : 20%;          /* 角丸       */
-        font-size     : 18pt;        /* 文字サイズ */
-        text-align    : center;      /* 文字位置   */
-        cursor        : pointer;     /* カーソル   */
-        padding       : 22px 34px;   /* 余白       */
-        background    : #ff7f7f;     /* 背景色     */
-        color         : #ffffff;     /* 文字色     */
-        line-height   : 1em;         /* 1行の高さ  */
-        opacity       : 0.9;         /* 透明度     */
-        transition    : .3s;         /* なめらか変化 */
-        box-shadow    : 13px 13px 23px #666666;  /* 影の設定 */
+        .button {
+          display       : inline-block;
+          border-radius : 20%;          /* 角丸       */
+          font-size     : 18pt;        /* 文字サイズ */
+          text-align    : center;      /* 文字位置   */
+          cursor        : pointer;     /* カーソル   */
+          padding       : 22px 34px;   /* 余白       */
+          background    : #0a0a0a;;     /* 背景色     */
+          color         : #ffffff;     /* 文字色     */
+          line-height   : 1em;         /* 1行の高さ  */
+          opacity       : 0.9;         /* 透明度     */
+          transition    : .3s;         /* なめらか変化 */
+          box-shadow    : 13px 13px 23px #666666;  /* 影の設定 */
+        }
+        .button:hover {
+          box-shadow    : none;        /* カーソル時の影消去 */
+          opacity       : 1;           /* カーソル時透明度 */
+        }
+
+
       }
-      .button:hover {
-        box-shadow    : none;        /* カーソル時の影消去 */
-        opacity       : 1;           /* カーソル時透明度 */
-      }
+    
 
-
-    }
-  }
-
-
+}

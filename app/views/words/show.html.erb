@@ -1,25 +1,44 @@
+<div class="line-bc">
 
-<div class="wordwrapper">
-
-
-
-  <div class="wordletter">
-    <%= @word.letter %>
+ 
+  <div class="balloon6">
+   
+    
+    <div class="word-p ">
+      <%= @word.letter %>
+    
+  </div>
+ 
+ 
+ <div class="balloon6">   
+  <div class="chatting">
+        <div class="says">
+          <%= @word.meaning %>
+        </div>
+      </div>
+    </div>
+  
+  <div class="balloon6">
+    
+    <div class="chatting">
+      <div class="says">
+       <%= simple_format @word.engineer %>
+      </div>
+    </div>
   </div>
 
-  <div class="wordmean">
-    <%= @word.meaning %>
-  </div>
 
-  <div class="wordeng">
-    <%= simple_format @word.engineer %>
-  </div>
-  <% if user_signed_in? && current_user.id == @word.user_id %>
-  <div class="postManage">
-  <%= link_to "編集", edit_word_path(@word.id), class: "wordManage__edit" %>
-  <%= link_to "削除", word_path(@word.id), method: :delete, class: "postManage__delete" %>
-  <%= link_to "ホームに戻る", root_path(@word.id), class: "wordManage__root" %>
-  </div>
-  <% end %>
+ <div class="balloon6">
+    <div class="word-p ">
+     <%= link_to "ホームに戻る", root_path(@word.id), class: "wordManage__root" %>
+    <% if user_signed_in? && current_user.id == @word.user_id %>
+    <div class="postManage">
+    <%= link_to "編集", edit_word_path(@word.id), class: "wordManage__edit" %>
+    <%= link_to "削除", word_path(@word.id), method: :delete, class: "postManage__delete" %>
+    </div>
+     
+    <% end %>
 
+   </div>
+   </div>
 </div>

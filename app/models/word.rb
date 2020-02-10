@@ -5,11 +5,11 @@ class Word < ApplicationRecord
   
   belongs_to :user
 
+ 
+
   def self.search(search)
     return Word.all unless search
-    Word.where(['letter LIKE ?', "%#{search}%"])
-
-   
+    Word.where('letter LIKE (?)', "%#{search}%")
   end
 
 end
