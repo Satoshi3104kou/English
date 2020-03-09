@@ -16,8 +16,8 @@ class WordsController < ApplicationController
     if @word.save
       # redirect_to words_path #成功の場合
     else        
-      flash.now[:alert] = "既に作成されています"
-      render 'new' #失敗の場合 
+      flash[:alert] = "既に作成されています"
+      redirect_to new_word_path #失敗の場合 
     end
 
   end
@@ -33,11 +33,13 @@ class WordsController < ApplicationController
   def edit
     @word = Word.find(params[:id])
     
+    
   end
 
   def update
     word = Word.find(params[:id])
     word.update(word_params)
+  
    
   end
 

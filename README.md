@@ -1,24 +1,26 @@
-# README
+# Eng(ineer)lish
+エンジニア用語と英語を同時に学べる。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+英語から離れてかなり経ってしまい、そもそもの意味さえも忘れ、さらにそこからエンジニアとしての用語も同時にわかれば定着力も着くと思ったのがきっかけ。
+一番みじかな所からビジネス展開ができる様に考え、今の時点で仮にビジネス展開ができるアプリとはと考えた時、今学んでいる学生という立場でこれがあったら助かるというものを選びました。
 
-Things you may want to cover:
 
-* Ruby version
+# DEMO
+調べたい単語を検索し、英語の意味とエンジニアの用語がわかる。ログイン登録した人だけが投稿、編集ができる。
 
-* System dependencies
+# Features
+Wikipediaの様に自由に投稿できるので、多くの登校があれば、検索が可能になる。
 
-* Configuration
+# Requirement
 
-* Database creation
+* ruby 2.5.1
+* Rails 5.2.4.1
 
-* Database initialization
+# Usage
 
-* How to run the test suite
+ログイン登録していただき、投稿し、その後その単語を検索すると、検索結果が出る。
 
-* Services (job queues, cache servers, search engines, etc.)
+# Author
 
-* Deployment instructions
-
-* ...
+* 香村  諭
+* satoshi.koumura@gmail.com
