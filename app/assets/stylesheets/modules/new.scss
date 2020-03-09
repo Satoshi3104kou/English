@@ -12,15 +12,16 @@
   background-image:  url(黒板.jpg);
   background-position: center center;
   background-size:  cover; 
-  
+  font-family:'fantasy';
   
   
   .title{
     font-weight: bold;
     font-size: 50px;
     padding-top: 30px;
-    font-family:'MyFont';
+    font-family:fantasy;
     color: whitesmoke;
+    
     
 
   }
@@ -28,41 +29,62 @@
   .field-email{
     margin-top: 80px;
     color: whitesmoke;
-   
+    font-family:fantasy;
     
   }
   #user_email{
     background    :rgba(0,0,0,0); 
-    box-shadow    : 20px 20px 47px #666666;
+    // box-shadow    : 20px 20px 47px #666666;
     height: 40px;
     width: 300px;
+    transition: all .6s ease;
+    border-bottom:1px solid #cccccc;
+    border-right:none;
+    border-left:none;
+    border-top:none;
+    border-radius:0px;
+    color: whitesmoke;
+    font-family:fantasy;
   }
 
   .field-pass{
     margin-top: 30px;
     color: whitesmoke;
-    
+    font-family:fantasy;
 
   }
   #user_password{
     background    :rgba(0,0,0,0); 
-    box-shadow    : 20px 20px 47px #666666;
+    // box-shadow    : 20px 20px 47px #666666;
     height: 40px;
     width: 300px;
+    border-bottom:1px solid #cccccc;
+    border-right:none;
+    border-left:none;
+    border-top:none;
+    border-radius:0px;
+    font-family:fantasy;
   }
 
   .field-confimation{
     margin-top: 30px;
     color: whitesmoke;
     background    :rgba(0,0,0,0); 
-    
+    font-family:fantasy;
 
   }
   #user_password_confirmation{
     background    :rgba(0,0,0,0); 
-    box-shadow    : 20px 20px 47px #666666;
+    // box-shadow    : 20px 20px 47px #666666;
     height: 40px;
     width: 300px;
+    border-bottom:1px solid #cccccc;
+    border-right:none;
+    border-left:none;
+    border-top:none;
+    border-radius:0px;
+    font-family:fantasy;
+    
   }
 
  
@@ -82,6 +104,7 @@
     transition    : .3s;         /* なめらか変化 */
     box-shadow    : 20px 20px 47px #666666;  /* 影の設定 */
     text-decoration: none;
+    font-family:fantasy;
   }
   .button:hover {
     box-shadow    : none;        /* カーソル時の影消去 */

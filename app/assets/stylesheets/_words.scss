@@ -107,7 +107,8 @@
     font-size     : 28px;                /* 入力文字サイズ */
     // color         : white;             /* 入力文字の色   */
     font-weight   : bold;                /* 入力文字の太字 */
-    letter-spacing: .1em;                /* 入力文字の間隔 */
+    letter-spacing: .1em;  
+    // background    :rgba(0,0,0,0);               /* 入力文字の間隔 */
   }
 
 /* --- 入力フィールドにフォーカスか来たら ----------------*/
